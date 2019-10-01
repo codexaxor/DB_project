@@ -59,7 +59,7 @@ public class PatientSignUp extends javax.swing.JFrame {
         jLabel15 = new javax.swing.JLabel();
         house = new javax.swing.JTextField();
         jLabel16 = new javax.swing.JLabel();
-        jComboBox3 = new javax.swing.JComboBox<>();
+        country = new javax.swing.JComboBox<>();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         password = new javax.swing.JTextField();
@@ -328,6 +328,7 @@ public class PatientSignUp extends javax.swing.JFrame {
     /// SignUp patient data
     private void signUpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_signUpActionPerformed
         
+        System.out.println("date of birth = " + ((JTextField) dateOfBirth.getDateEditor().getUiComponent()).getText());
         
         
         try{

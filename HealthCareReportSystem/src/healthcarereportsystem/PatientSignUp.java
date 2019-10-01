@@ -335,7 +335,7 @@ public class PatientSignUp extends javax.swing.JFrame {
         Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             String url="jdbc:sqlserver://localhost:1433;databaseName=HealthCareReportSystem2;user=sa;password=123456";
             Connection cn = DriverManager.getConnection(url);
-
+ 
             String sql = "Insert into PatientLogIn"
                     + "(email,password)"
                     + "values(?,?)";
@@ -377,8 +377,8 @@ public class PatientSignUp extends javax.swing.JFrame {
             pst1.executeUpdate();
 
             JOptionPane.showMessageDialog(null, "Successfully Registered");
-//            DoctorSignUp.Succes field = new DoctorSignUp.Succes();
-//            field.setVisible(true);
+           DoctorSignUp.Succes field = new DoctorSignUp.Succes();
+           field.setVisible(true);
 
             cn.close();
             

@@ -5,6 +5,10 @@
  */
 package healthcarereportsystem;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import javax.swing.JTextField;
+
 /**
  *
  * @author DELL
@@ -118,6 +122,11 @@ public class DoctorSignUp extends javax.swing.JFrame {
         jLabel8.setText("LAST NAME    :");
 
         signUp.setText("Sign Up");
+        signUp.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                signUpActionPerformed(evt);
+            }
+        });
 
         signIn.setText("Sign In");
         signIn.addActionListener(new java.awt.event.ActionListener() {
@@ -293,6 +302,10 @@ public class DoctorSignUp extends javax.swing.JFrame {
     private void signInActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_signInActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_signInActionPerformed
+
+    private void signUpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_signUpActionPerformed
+        
+    }//GEN-LAST:event_signUpActionPerformed
 
     /**
      * @param args the command line arguments
